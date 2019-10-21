@@ -12,7 +12,6 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
-		<link rel="stylesheet" href="lib/css/allison-is-her.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -26,8 +25,294 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Introduction to CSS, a workshop</h1>
+				</section>
+				<!--introduction-->
+				<section>
+					<h3>👋 Hi! I'm Allison Skinner<h3>
+						<p class="fragment">I'm a web designer & developer</p>
+						<p class="fragment">Based in Athens, Georgia</p>
+				</section>
+				<section>
+					<h3>I graduated from UGA in 2015<h3>
+						<p class="fragment">with a major in Journalism, minor in spanish and a New Media Certificate</p>
+						<p class="fragment">I didn't know what I wanted to <em>do</em> but I knew I wanted to work with code/design</p>
+				</section>
+				<section>
+					<h3>Got a job at a small agency and started building websites.</h3>
+					<p class="fragment">I loved it!</p>
+					<p class="fragment">Got fired from agency job for on-the-side freelancing</p>
+					<p class="fragment">Turned on-the-side freelancing into full-time job.</p>
+					<p class="fragment">Still doing it over three years later!</p>
+				</section>
+				<section>
+					  <p class="fragment">A few of my clients include...</p>
+						<h3>Lamar Dodd School of Arts</h3>
+						<img src="img/ld-slides.gif"/>
+				</section>
+				<section>
+							<h3>UGA Performing Arts Center</h3>
+							<img src="img/pac-slider.gif"/>
+					</section>
+					<section>
+							<h3>Avid Bookshop</h3>
+							<img src="img/avid.gif"/>
+					</section>
+					<section>
+							<h3>Athentic Brewing Company</h3>
+							<img src="img/athentic-home.gif"/>
+					</section>
+					<section>
+							<h3>JW York Homes</h3>
+							<img src="img/jwy-homepage.jpg"/>
+					</section>
+					<section>
+							<h3>What is CSS?</h3>
+							<p class="fragment">It stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heet</p>
+							<p class="fragment">CSS determines the STYLE of your webiste (I'll explain "cascading" in a second)</p>
+							<p class="fragment">This includes:</p>
+							<ul>
+								<li>colors</li>
+								<li>typography</li>
+								<li>layout, positioning</li>
+								<li>responsive design for mobile</li>
+							</ul>
+					</section>
+					<section>
+							<h3>HTML is the CONTENT</h3>
+							<p class="fragment">This includes:</p>
+							<ul>
+								<li>copy</li>
+								<li>image files</li>
+								<li>links</li>
+								<li>breaking things into divs, sections</li>
+							</ul>
+					</section>
+					<section>
+							<h3>An HTML website with no CSS</h3>
+							<p class="fragment">Look like <a href="https://codepen.io/adskinner/pen/OJJboaV" target="_blank">this [codepen]</a>.</p>
+					</section>
+					<section>
+						<h3>So what does cascading mean?</h3>
+						<p class="fragment">The “cascade” is an algorithm that your browser performs to decide which styles to use on your site.</p>
+						<p class="fragment">aka the style that <em>wins</em> </p>
+						<p class="fragment">So if you have perfectly written CSS but it's just not working, you "cascade" is likely off</p>
+					</section>
+					<section>
+						<h3>The "cascade" for stylesheets</h3>
+						<img src="img/cascadingStylesheet.png"/>
+						<p class="fragment">Style.css comes first. Custom.css comes second.</p>
+						<p class="fragment">Custom.css is the “winning” stylesheet</p>
+					</section>
+					<section>
+						<h3>The "cascade" for stylesheets</h3>
+						<img src="img/styleCSS.png"/>
+						<img src="img/customCSS.png"/>
+						<p class="fragment"> p {color:white} is the <b>winner</b> because “custom.css” comes <em>AFTER</em> “style.css” in your html HEAD</p>
+					</section>
+					<section>
+						<h3>The "cascade" within your stylesheet</h3>
+						<p class="fragment">Your browser will also scan your stylesheet to see which CSS <em>wins</em> for each element. </p>
+						<p class="fragment">Ranking of importance:</p>
+						<ul>
+							<li class="fragment">3. Elements</li>
+							<li class="fragment">2. Classes</li>
+							<li class="fragment">1. IDs</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Elements</h3>
+						<p class="fragment">Elements are the html selectors you use</p>
+						<p class="fragment">Like...</p>
+						<ul>
+							<li class="fragment">h1, h2, h3, h4, h5, h6</li>
+							<li class="fragment">p, a</li>
+							<li class="fragment">img</li>
+							<li class="fragment">div, span, section</li>
+					</section>
+					<section>
+						<h3>Elements</h3>
+						<p class="fragment">If you create CSS for an element, like...</p>
+						<img class="fragment" src="img/elementCSS.png"/>
+						<p class="fragment">Then any link on your WHOLE website will be blue.</p>
+					</section>
+					<section>
+						<h3>Classes</h3>
+						<p class="fragment">If you add a class to your html element like...</p>
+						<img class="fragment" src="img/classCSS.png"/>
+						<img class="fragment" src="img/classCSS2.png"/>
+						<p>Then that link will be the color red instead of blue. A class <em>wins</ems> over an element.</p>
+					</section>
+					<section>
+						<h3>IDs</h3>
+						<p class="fragment">If you add an ID to your html element like...</p>
+						<img class="fragment" src="img/idCSS.png"/>
+						<img class="fragment" src="img/idCSS2.png"/>
+						<p>Then that link will be the color green instead of red. An ID <em>wins</ems> over a class and element.</p>
+					</section>
+					<section>
+						<h3>The "cascade" within your stylesheet</h3>
+						<p>Let's test it out on <a href="https://codepen.io/adskinner/pen/WNNogax" target="_blank">this codepen</a>
+					</section>
+					<section>
+							<h3>CSS for typography</h3>
+					</section>
+					<section>
+						<h3>First, let's add custom fonts to our website</h3>
+						<p class="fragment">Google Fonts</p>
+						<p class="fragment">Adobe Fonts</p>
+						<p class="fragment">Custom Font Files</p>
+					</section>
+					<section>
+						<h3>Google Fonts</h3>
+						<p class="fragment">First pick your custom font on <a href="https://fonts.google.com/specimen/Oswald" target="_blank">fonts.google.com</a>
+						<p class="fragment">Then let's add it to your stylesheet. <a href="https://codepen.io/adskinner/pen/Jjjbaqe" target="_blank">Using this codepen</a>.
+					</section>
+					<section>
+						<h3>Adobe Fonts</h3>
+						<p class="fragment">Let's pick out our fonts on <a href="https://fonts.adobe.com/my_fonts#web_projects-section" target="_blank">fonts.adobe.com</a>
+						<p class="fragment">Let's add the custom Adobe font to our website. <a href="https://codepen.io/adskinner/pen/mddOQQK" target="_blank">Using this codepen.</a>
+					</section>
+					<section>
+						<h3>Custom Font Files</h3>
+						<p class="fragment">This is if you purchase or download custom font <em>files</em></p>
+						<p class="fragment">It doesn't come with a handy copy+paste line of code</p>
+						<p class="fragment">For example, I purchased the font <a href="https://www.grillitype.com/typeface/gt-haptik" target="_blank">GT Haptik</a> for my portfolio website.</p>
+					</section>
+					<section>
+							<h3>Custom Font Files</h3>
+								<p class="fragment">First add the font files you've downloaded to your website directory</p>
+								<p class="fragment">Let's see where I added my custom font files for this <a href="https://github.com/adskinner/CSS-Workshop" target="_blank">CSS Workshop website.</a>
+								<p class="fragment">Then let's see where I added them to my css using @font-face <a href="https://github.com/adskinner/CSS-Workshop" target="_blank">[on github]</a>
+					</section>
+					<section>
+							<h3>Custom Font Files</h3>
+							<p>the @font-face rule</p>
+							<img src="img/font-face.png"/>
+					</section>
+					<section>
+							<h3>CSS attributes you can use for typography</h3>
+							<p class="fragment">there are almost limitless options, but I'll show you the attributes I use the most often.</p>
+					</section>
+					<section>
+						<h3>CSS Attributes for typography</h3>
+								<p class="fragment">font-size</p>
+									<ul>
+										<li class="fragment">px</li>
+										<li class="fragment">em (what I use)</li>
+										<li class="fragment">also rem and %</li>
+									</ul>
+								<p class="fragment">color</p>
+									<ul>
+										<li class="fragment">predefined colors by browser, like "red", "blue", etc.
+										<li class="fragment">or hex value (like #0000ff for cobalt blue). specific colors.</li>
+									</ul>
+								<p class="fragment">line-height</p>
+								<ul>
+									<li class="fragment">space between lines</li>
+									<li class="fragment">0 - x. But 0 - 2 most common.</li>
+									<li class="fragment">example '1.4'</li>
+								</ul>
+						</section>
+						<section>
+							<h3>CSS Attributes for typography</h3>
+								<p class="fragment">letter-spacing</p>
+								<ul>
+									<li class="fragment">space between letters</li>
+									<li class="fragment">px or em. can use decimal values with em like "0.03em"</li>
+								</ul>
+								<p class="fragment">font-weight</p>
+								<ul>
+									<li class="fragment">"normal", "bold"</li>
+									<li class="fragment">100, 200, 300, 400, 500, 600, 700</li>
+								</ul>
+								<p class="fragment">text-transform</p>
+								<ul>
+									<li class="fragment">"uppercase", "lowercase", "normal"</li>
+								</ul>
+							</section>
+							<section>
+								<h3>CSS Attributes for typography</h3>
+								<p class="fragment">text-decoration</p>
+								<ul>
+									<li class="fragment">"underline" (good for links)</li>
+								</ul>
+								<p class="fragment">text-align</p>
+								<ul>
+									<li class="fragment">"center", "left","right","justify"</li>
+								</ul>
+							</ul>
+					</section>
+					<section>
+						<h3>Let's demo this</h3>
+						<p><a href="https://codepen.io/adskinner/pen/BaaQGGv" target="_blank">On this codepen</a></p>
+					</section>
+					<section>
+						<h3>How to style a button</h3>
+						<p class="fragment">First, let's make it look like a button.</p>
+						<p class="fragment"><a href="https://codepen.io/adskinner/pen/zYYoMeK" target="_blank">on codepen</a></p>
+						<p class="fragment">:hover [when you hover on link]</p>
+						<p class="fragment">:focus [when you click on link]</p>
+						<p class="fragment">:visited [if you've already clicked on link]</p>
+					</section>
+					<section>
+						<p>Now we understand typography for CSS</p>
+						<h3 class="fragment">what about positioning / alignment / layout?</h3>
+					</section>
+					<section>
+						<h3>My reccomendations</h3>
+						<p class="fragment">flexbox</p>
+						<p class="fragment">bootstrap</p>
+						<p class="fragment">css grid</p>
+					</section>
+					<section>
+						<h3>Flexbox</h3>
+						<p class="fragment">a layout mode for CSS</p>
+						<p class="fragment">What The Flexbox (<a href="https://flexbox.io" target="_blank">flexbox.io</a>) is a great video series</p>
+						<p>codepen</p>
+					</section>
+					<section>
+						<h3>Bootstrap</h3>
+						<p class="fragment">this is a CSS framework that you connect to your website</p>
+						<p class="fragment">It comes with a lot of pre-loaded styles, functionality, grid layout</p>
+						<p class="fragment">For all resources + documentation visit <a href="https://getbootstrap.com/" target="_blank">getbootstrap.com</a>
+						<p>codepen</p>
+					</section>
+					<section>
+						<p>Ok, no we know a little about typography and alignment</p>
+						<h3>Media Queries, aka Responsive Design</h3>
+					</section>
+					<section>
+						<h3>Breakpoints</h3>
+						<p class="fragments">1440px</p>
+						<p class="fragments">1280px</p>
+						<p class="fragments">992px</p>
+						<p class="fragments">768px</p>
+						<p class="fragments">570px</p>
+						<p class="fragments">480px</p>
+						<p class="fragments">375px</p>
+					</section>
+					<section>
+						<h3>@media</h3>
+						<p class="fragment">@media (<b>max-width</b>: 768px) {/*code goes here*/}</p>
+						<p class="fragment">Translates to...when screen size is at the MAX width of 768px. So anything less than 768px will have this styling.</p>
+						<p class="fragment">I use "max-width" for my tablet and mobile media queries</p>
+					</section>
+					<section>
+						<h3>@media</h3>
+						<p class="fragment">@media (<b>min-width</b>: 768px) {/*code goes here*/}</p>
+						<p class="fragment">Translates to...when screen size is AT LEAST the width of 768px. So anything more than 768px will have this styling.</p>
+						<p class="fragment">I use "min-width" for laptop vs. desktop specific media queries</p>
+					</section>
+					<section>
+						<h3>@media</h3>
+						<p class="fragment">Let's test it out</p>
+						<p class="fragment">codepen link</p>
+					</section>
+					<!--end introduction-->
+
+
 				<section>Slide 3</section>
 			</div>
 		</div>
