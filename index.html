@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Allison's CSS Workshop</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -12,6 +12,7 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -36,7 +37,7 @@
 				</section>
 				<section>
 					<h3>I graduated from UGA in 2015<h3>
-						<p class="fragment">with a major in Journalism, minor in spanish and a New Media Certificate</p>
+						<p class="fragment">with a major in Journalism, minor in Spanish and a New Media Certificate</p>
 						<p class="fragment">I didn't know what I wanted to <em>do</em> but I knew I wanted to work with code/design</p>
 				</section>
 				<section>
@@ -47,29 +48,11 @@
 					<p class="fragment">Still doing it over three years later!</p>
 				</section>
 				<section>
-					  <p class="fragment">A few of my clients include...</p>
-						<h3>Lamar Dodd School of Arts</h3>
-						<img src="img/ld-slides.gif"/>
+					  <h3>You can see my work & writing at <a href="https://allisondskinner.com" target="_blank">allisondskinner.com</a></h3>
 				</section>
-				<section>
-							<h3>UGA Performing Arts Center</h3>
-							<img src="img/pac-slider.gif"/>
-					</section>
-					<section>
-							<h3>Avid Bookshop</h3>
-							<img src="img/avid.gif"/>
-					</section>
-					<section>
-							<h3>Athentic Brewing Company</h3>
-							<img src="img/athentic-home.gif"/>
-					</section>
-					<section>
-							<h3>JW York Homes</h3>
-							<img src="img/jwy-homepage.jpg"/>
-					</section>
 					<section>
 							<h3>What is CSS?</h3>
-							<p class="fragment">It stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heet</p>
+							<p class="fragment">It stands for <u>C</u>ascading <u>S</u>tyle <u>S</u>heet</p>
 							<p class="fragment">CSS determines the STYLE of your webiste (I'll explain "cascading" in a second)</p>
 							<p class="fragment">This includes:</p>
 							<ul>
@@ -141,15 +124,22 @@
 						<h3>Classes</h3>
 						<p class="fragment">If you add a class to your html element like...</p>
 						<img class="fragment" src="img/classCSS.png"/>
+					</section>
+					<section>
+						<p>and then you add CSS for that class...</p>
 						<img class="fragment" src="img/classCSS2.png"/>
-						<p class="fragment">Then that link will be the color red instead of blue. A class <em>wins</em> over an element.</p>
+						<p class="fragment">Then that link will be the color red instead of blue.
+						<p class="fragment">A class <em>wins</em> over an element.</p>
 					</section>
 					<section>
 						<h3>IDs</h3>
 						<p class="fragment">If you add an ID to your html element like...</p>
 						<img class="fragment" src="img/idCSS.png"/>
+					</section>
+					<section>
+						<p class="fragment">and then add CSS for that ID...</p>
 						<img class="fragment" src="img/idCSS2.png"/>
-						<p>Then that link will be the color green instead of red. An ID <em>wins</em> over a class and element.</p>
+						<p class="fragment">Then that link will be the color green instead of red. An ID <em>wins</em> over a class and element.</p>
 					</section>
 					<section>
 						<h3>The "cascade" within your stylesheet</h3>
@@ -197,48 +187,51 @@
 					</section>
 					<section>
 						<h3>CSS Attributes for typography</h3>
-								<p class="fragment">font-size</p>
+								<p class="fragment"><b>font-size</b></p>
 									<ul>
 										<li class="fragment">px</li>
 										<li class="fragment">em (what I use)</li>
 										<li class="fragment">also rem and %</li>
 									</ul>
-								<p class="fragment">color</p>
+								<p class="fragment"><b>color</b></p>
 									<ul>
 										<li class="fragment">predefined colors by browser, like "red", "blue", etc.
 										<li class="fragment">or hex value (like #0000ff for cobalt blue). specific colors.</li>
 									</ul>
-								<p class="fragment">line-height</p>
+								</section>
+								<section>
+									<h3>CSS Attributes for typography</h3>
+								<p class="fragment"><b>line-height</b></p>
 								<ul>
 									<li class="fragment">space between lines</li>
 									<li class="fragment">0 - x. But 0 - 2 most common.</li>
 									<li class="fragment">example '1.4'</li>
 								</ul>
-						</section>
-						<section>
-							<h3>CSS Attributes for typography</h3>
-								<p class="fragment">letter-spacing</p>
+								<p class="fragment"><b>letter-spacing</b></p>
 								<ul>
 									<li class="fragment">space between letters</li>
 									<li class="fragment">px or em. can use decimal values with em like "0.03em"</li>
 								</ul>
-								<p class="fragment">font-weight</p>
+						</section>
+						<section>
+							<h3>CSS Attributes for typography</h3>
+								<p class="fragment"><b>font-weight</b></p>
 								<ul>
 									<li class="fragment">"normal", "bold"</li>
 									<li class="fragment">100, 200, 300, 400, 500, 600, 700</li>
 								</ul>
-								<p class="fragment">text-transform</p>
+								<p class="fragment"><b>text-transform</b></p>
 								<ul>
 									<li class="fragment">"uppercase", "lowercase", "normal"</li>
 								</ul>
 							</section>
 							<section>
 								<h3>CSS Attributes for typography</h3>
-								<p class="fragment">text-decoration</p>
+								<p class="fragment"><b>text-decoration</b></p>
 								<ul>
 									<li class="fragment">"underline" (good for links)</li>
 								</ul>
-								<p class="fragment">text-align</p>
+								<p class="fragment"><b>text-align</b></p>
 								<ul>
 									<li class="fragment">"center", "left","right","justify"</li>
 								</ul>
@@ -270,50 +263,77 @@
 						<h3>Flexbox</h3>
 						<p class="fragment">a layout mode for CSS</p>
 						<p class="fragment">What The Flexbox (<a href="https://flexbox.io" target="_blank">flexbox.io</a>) is a great video series</p>
-						<p>codepen</p>
+						<p class="fragment"><a href="https://codepen.io/adskinner/pen/XWWNywj">codepen for flexbox row</a></p>
+					</section>
+					<section>
+						<h3>Flexbox</h3>
+						<p class="fragment">Flexbox for content alignment</p>
+						<p class="fragment"><a href="https://codepen.io/adskinner/pen/QWWdNKv" target="_blank">codepen</a></a>
+							<p class="fragment">Another good resource is <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Trick's A Guide to Flexbox</a></p>
 					</section>
 					<section>
 						<h3>Bootstrap</h3>
 						<p class="fragment">this is a CSS framework that you connect to your website</p>
 						<p class="fragment">It comes with a lot of pre-loaded styles, functionality, grid layout</p>
 						<p class="fragment">For all resources + documentation visit <a href="https://getbootstrap.com/" target="_blank">getbootstrap.com</a>
-						<p>codepen</p>
+						<p class="fragment"><a href="https://codepen.io/adskinner/pen/zYYNqdM">codepen</a></p>
 					</section>
 					<section>
-						<p>Ok, no we know a little about typography and alignment</p>
+						<h3>Bootstrap</h3>
+						<p><a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">Bootstrap's guide to the grid system</a></p>
+					</section>
+					<section>
+						<p>Ok, now we know a little about typography and alignment</p>
 						<h3>Media Queries, aka Responsive Design</h3>
 					</section>
 					<section>
 						<h3>Breakpoints</h3>
-						<p class="fragments">1440px</p>
-						<p class="fragments">1280px</p>
-						<p class="fragments">992px</p>
-						<p class="fragments">768px</p>
-						<p class="fragments">570px</p>
-						<p class="fragments">480px</p>
-						<p class="fragments">375px</p>
+						<p class="fragment">1440px [laptop]</p>
+						<p class="fragment">1280px [smaller laptop]</p>
+						<p class="fragment">992px [smaller laptop/large ipad]</p>
+						<p class="fragment">768px [ipad]</p>
+						<p class="fragment">570px [mobile]</p>
+						<p class="fragment">480px [mobile]</p>
+						<p class="fragment">375px [mobile]</p>
 					</section>
 					<section>
 						<h3>@media</h3>
 						<p class="fragment">@media (<b>max-width</b>: 768px) {/*code goes here*/}</p>
 						<p class="fragment">Translates to...when screen size is at the MAX width of 768px. So anything less than 768px will have this styling.</p>
 						<p class="fragment">I use "max-width" for my tablet and mobile media queries</p>
+						<p class="fragment"><a href="https://codepen.io/adskinner/pen/LYYxNgY" target="_blank">codepen</a></p>
 					</section>
 					<section>
 						<h3>@media</h3>
-						<p class="fragment">@media (<b>min-width</b>: 768px) {/*code goes here*/}</p>
-						<p class="fragment">Translates to...when screen size is AT LEAST the width of 768px. So anything more than 768px will have this styling.</p>
+						<p class="fragment">@media (<b>min-width</b>: 1440px) {/*code goes here*/}</p>
+						<p class="fragment">Translates to...when screen size is AT LEAST the width of 1440px. So anything more than 1440px will have this styling.</p>
 						<p class="fragment">I use "min-width" for laptop vs. desktop specific media queries</p>
+						<p class="fragment"><a href="https://codepen.io/adskinner/pen/dyyNMQo" target="_blank">codepen</a></p>
 					</section>
 					<section>
 						<h3>@media</h3>
 						<p class="fragment">Let's test it out</p>
-						<p class="fragment">codepen link</p>
+						<p class="fragment">Flexbox with media queries: <a href="https://codepen.io/adskinner/pen/MWWJyRz" target="_blank">codepen</a></p>
+						<p class="fragment">Typography with media queries: <a href="https://codepen.io/adskinner/pen/ExxZKBB" target="_blank">codepen</a></p>
+					</section>
+					<section>
+						<h3>Troubleshooting</h3>
+					</section>
+					<section>
+						<p class="fragment">Inspect element / Dev Tools</p>
+						<p class="fragment">Console Log</p>
+						<p class="fragment"><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a> / Google</p>
+					</section>
+					<section>
+						<h2>Say Hi</h2>
+            <p>twitter: @skinner_design</p>
+            <p>instagram: @a.l.l.is.on</p>
+            <p>website: allisondskinner.com</p>
+            <p>email: allisondskinner@gmail.com</p>
 					</section>
 					<!--end introduction-->
 
 
-				<section>Slide 3</section>
 			</div>
 		</div>
 

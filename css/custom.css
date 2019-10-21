@@ -1,0 +1,83 @@
+/*grillitype tests*/
+@font-face {
+  font-family: "GT Haptik Black";
+  src: url("../fonts/gt-haptik/GT-Haptik-Black.ttf") format("ttf"),
+       url("../fonts/gt-haptik/GT-Haptik-Black.otf") format("otf"),
+       url("../fonts/gt-haptik/GT-Haptik-Black.woff") format("woff"),
+       url("../fonts/gt-haptik/GT-Haptik-Black.woff2") format("woff2"),
+       url("../fonts/gt-haptik/GT-Haptik-Black.eot") format("eot");
+}
+@font-face {
+  font-family: "GT Haptik Bold";
+  src: url("../fonts/gt-haptik/GT-Haptik-Bold.ttf") format("ttf"),
+       url("../fonts/gt-haptik/GT-Haptik-Bold.otf") format("otf"),
+       url("../fonts/gt-haptik/GT-Haptik-Bold.woff") format("woff"),
+       url("../fonts/gt-haptik/GT-Haptik-Bold.woff2") format("woff2"),
+       url("../fonts/gt-haptik/GT-Haptik-Bold.eot") format("eot");
+}
+@font-face {
+  font-family: "GT Haptik Regular";
+  src: url("../fonts/gt-haptik/GT-Haptik-Regular.ttf") format("ttf"),
+       url("../fonts/gt-haptik/GT-Haptik-Regular.otf") format("otf"),
+       url("../fonts/gt-haptik/GT-Haptik-Regular.woff") format("woff"),
+       url("../fonts/gt-haptik/GT-Haptik-Regular.woff2") format("woff2"),
+       url("../fonts/gt-haptik/GT-Haptik-Regular.eot") format("eot");
+}
+.hashtag{
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+}
+.reveal section img.no-border{
+  border: 0;
+  box-shadow: 0 0 0;
+}
+
+.reveal pre {
+  box-shadow: 0 0 0;
+}
+h1, h2, h3 {
+    line-height:1.1;
+    color:#fff;
+    font-family: 'GT Haptik Bold',sans-serif!important;
+    text-transform:none!important;
+    font-size: 3rem!important;
+    font-weight: 600;
+    line-height:1.1;
+}
+body, p {
+    font-family:"GT Haptik Regular"!important;
+    font-size:
+
+}
+p {
+    color:#fff;
+    font-size:28px!important;
+}
+ul li {
+  color:#fff;
+  font-size:28px!important;
+  font-family:"GT Haptik Regular"!important;
+}
+.reveal a {
+  color: yellow!important;
+}
+.reveal .state-background, body {
+    background: #5D47BA!important;
+
+}
+.reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
+    border-right-color:deeppink;
+}
+.reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
+    border-left-color:deeppink;
+}
+.reveal .progress span {
+    background: #ffff00;
+}
+.reveal .controls {
+  color: #ffff00;
+}
+.reveal section img {
+  max-height: 450px;
+}
